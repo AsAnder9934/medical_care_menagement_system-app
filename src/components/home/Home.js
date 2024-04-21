@@ -1,8 +1,9 @@
 import React from "react";
 import "./Home.css";
 import logo from "./tmp/logo.PNG";
+import show_hide_pass from "./tmp/show_hide_pass.png";
 
-function Home() {
+function Home({ showPassword, handleChange, togglePasswordVisibility }) {
   return (
     <div className="home">
       <div className="home_top">
@@ -24,7 +25,17 @@ function Home() {
               <input className="insert_login" type="text" />
             </div>
             <div className="password-input">
-              <input className="insert_password" type="password" />
+              <input
+                className="insert_password"
+                type={showPassword ? "text" : "password"}
+                onChange={handleChange}
+              />
+              <img
+                className="show_hide_password"
+                src={show_hide_pass}
+                alt="show_hide_password"
+                onClick={togglePasswordVisibility}
+              />
             </div>
           </div>
           <div className="logging_button">
