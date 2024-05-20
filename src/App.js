@@ -1,5 +1,6 @@
 import "./App.css";
-import Home from "./components/home/Home";
+// import Home from "./components/home/Home";
+import Services from "./components/services/Services";
 import React, { useState } from "react";
 
 function App() {
@@ -15,10 +16,10 @@ function App() {
   };
   return (
     <div className="App">
-      <Home
-        showPassword={showPassword}
-        handleChange={handleChange}
-        togglePasswordVisibility={togglePasswordVisibility}
+      <Services
+      // showPassword={showPassword}
+      // handleChange={handleChange}
+      // togglePasswordVisibility={togglePasswordVisibility}
       />
     </div>
   );
