@@ -1,0 +1,75 @@
+.register_site {
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.register_login {
+  position: absolute;
+  width: 570px;
+  height: 60px;
+  left: 65px;
+  top: 329px;
+
+  background: #ffffff;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 115px;
+
+  color: #000000;
+}
+
+.register_password {
+  position: absolute;
+  width: 570px;
+  height: 60px;
+  left: 64px;
+  top: 416px;
+
+  background: #ffffff;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 115px;
+
+  color: #000000;
+}
+
+.register_confirm_password {
+  position: absolute;
+  width: 570px;
+  height: 60px;
+  left: 65px;
+  top: 510px;
+
+  background: #ffffff;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 115px;
+
+  color: #000000;
+}
+
+.register_button {
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  left: 404px;
+  top: 580px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 23px;
+
+  background: #1ca4ac;
+  color: #ffffff;
+}

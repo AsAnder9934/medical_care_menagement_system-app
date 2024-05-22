@@ -3,76 +3,47 @@
   width: 100vw;
   height: 100vh;
 }
+.background {
+  position: absolute;
+  width: 1851px;
+  height: 922px;
+  left: 0px;
+  right: 0px;
+}
+
+.transparency {
+  position: absolute;
+  width: 850px;
+  height: 922px;
+  left: 100px;
+  top: 0px;
+
+  background: rgba(0, 71, 83, 0.7);
+}
 
 .title {
-  /* Geoportal */
   position: absolute;
-  width: 423px;
-  height: 115px;
-  left: 748px;
-  top: 95px;
+  width: 300px;
+  height: 306px;
+  left: 65px;
+  top: 200px;
+  text-align: left;
 
   font-family: "Lato";
   font-style: normal;
-  font-weight: 400;
-  font-size: 96px;
-  line-height: 115px;
+  font-weight: 700;
+  font-size: 85px;
+  line-height: 102px;
 
-  color: #000000;
+  color: #ffffff;
 }
 
 .subtitle {
-  /* temat */
   position: absolute;
-  width: 967px;
-  height: 116px;
-  left: 476px;
-  top: 278px;
-
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 58px;
-  text-align: center;
-
-  color: #000000;
-}
-
-.home_botton_about {
-  /* Informacje o projekcie */
-  position: absolute;
-  width: 350px;
-  height: 43px;
-  left: 1509px;
-  top: 994px;
-
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 43px;
-  text-align: center;
-
-  color: #000000;
-}
-
-.logo {
-  /* logo */
-  position: absolute;
-  width: 225px;
-  height: 301px;
-  left: 1218px;
-  top: 520px;
-}
-
-.loggin_title {
-  /* Podaj dane logowania: */
-  position: absolute;
-  width: 392px;
+  width: 514px;
   height: 48px;
-  left: 476px;
-  top: 542px;
+  left: 64px;
+  top: 540px;
 
   font-family: "Lato";
   font-style: normal;
@@ -80,56 +51,97 @@
   font-size: 40px;
   line-height: 48px;
   /* identical to box height */
-  text-align: center;
+  text-align: left;
 
-  color: #000000;
+  color: #ffffff;
 }
 
-.login {
-  /* Login: */
+.home_botton_about {
   position: absolute;
-  width: 94px;
+  width: 135px;
   height: 43px;
-  left: 481px;
-  top: 617px;
+  left: 691px;
+  top: 855px;
 
   font-family: "Lato";
-  font-style: normal;
+  font-style: italic;
   font-weight: 400;
   font-size: 36px;
   line-height: 43px;
   text-align: center;
 
-  color: #000000;
+  color: #ffffff;
 }
 
-.password {
-  /* Hasło: */
+.website {
   position: absolute;
-  width: 101px;
+  width: 427px;
   height: 43px;
-  left: 481px;
-  top: 681px;
+  left: 64px;
+  top: 855px;
 
   font-family: "Lato";
-  font-style: normal;
+  font-style: italic;
   font-weight: 400;
   font-size: 36px;
   line-height: 43px;
   text-align: center;
 
-  color: #000000;
+  color: #ffffff;
+}
+
+.phone {
+  position: absolute;
+  width: 276px;
+  height: 43px;
+  left: 64px;
+  top: 738px;
+
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: left;
+
+  color: #ffffff;
+}
+
+.call_now {
+  position: absolute;
+  width: 150px;
+  height: 43px;
+  left: 64px;
+  top: 684px;
+
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.logo {
+  position: absolute;
+  width: 350px;
+  height: 160.92px;
+  left: 65px;
+  top: 39px;
+  border-radius: 23px;
 }
 
 .login_button {
-  /* button-login */
   position: absolute;
-  width: 300px;
-  height: 50px;
-  left: 532px;
-  top: 745px;
+  width: 250px;
+  height: 60px;
+  left: 491px;
+  top: 697px;
+  border-radius: 23px;
 
-  position: absolute;
+  background: #1ca4ac;
 
   font-family: "Lato";
   font-style: normal;
@@ -139,47 +151,20 @@
   text-align: center;
 
   color: #ffffff;
-
-  background: #b40505;
 }
 
 .login_button:hover {
   background-color: #ffffff;
-  color: rgba(255, 0, 0, 0.5);
-  border-color: rgba(255, 0, 0, 0.5);
+  color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(0, 255, 213, 0.5);
 }
 
-.insert_login {
-  /* login_area */
+.line {
   position: absolute;
-  font-size: 36px;
-  width: 250px;
-  height: 50px;
-  left: 612px;
-  top: 610px;
+  width: 600px;
+  height: 0px;
+  left: 104px;
+  top: 641px;
 
-  background: rgba(217, 217, 217, 0.5);
-  border-color: rgba(217, 217, 217, 0.5);
-}
-
-.insert_password {
-  /* password_area */
-  position: absolute;
-  font-size: 36px;
-  width: 250px;
-  height: 50px;
-  left: 612px;
-  top: 674px;
-
-  background: rgba(217, 217, 217, 0.5);
-  border-color: rgba(255, 255, 255, 0.5);
-}
-
-.show_hide_password {
-  /* show_hide_pass 1 */
-  position: absolute;
-  width: 52.36px;
-  height: 40px;
-  left: 884px;
-  top: 679px;
+  border: 2px solid #ffffff;
 }
