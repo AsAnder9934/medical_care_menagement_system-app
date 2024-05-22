@@ -1,0 +1,122 @@
+.loging {
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.insert_login {
+  position: absolute;
+  width: 570px;
+  height: 60px;
+  left: 65px;
+  top: 329px;
+
+  background: #ffffff;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 115px;
+
+  color: #000000;
+}
+
+.insert_password {
+  position: absolute;
+  width: 570px;
+  height: 60px;
+  left: 65px;
+  top: 424px;
+
+  background: #ffffff;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 115px;
+
+  color: #000000;
+}
+
+.forgot_id {
+  position: absolute;
+  width: 500px;
+  height: 43px;
+  left: 164px;
+  top: 501px;
+
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: left;
+
+  color: #ffffff;
+}
+
+.log_in {
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  left: 53px;
+  top: 557px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 23px;
+
+  background: #1ca4ac;
+  color: #ffffff;
+}
+
+.register {
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  left: 404px;
+  top: 557px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 23px;
+
+  background: #1ca4ac;
+  color: #ffffff;
+}
+
+.return {
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  left: 491px;
+  top: 697px;
+
+  border-radius: 23px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+
+  background: #1ca4ac;
+  color: #ffffff;
+}
+
+.show_hide_password {
+  position: absolute;
+  width: 76px;
+  height: 60px;
+  left: 657px;
+  top: 424px;
+}

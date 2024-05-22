@@ -1,54 +1,37 @@
 import React from "react";
 import "./Home.css";
-import logo from "./tmp/logo.PNG";
-import show_hide_pass from "./tmp/show_hide_pass.png";
+import logo from "./tmp/green_logo_1.png";
+import background from "./tmp/home_background.png";
+import { Link } from "react-router-dom";
 
-function Home({ showPassword, handleChange, togglePasswordVisibility }) {
+function Home() {
   return (
     <div className="home">
-      <div className="home_top">
-        <div className="title">Geoportal</div>
-        <div className="subtitle">
-          Zarządzanie przychodniami lekarskimi i pacjentami przypisanymi do
-          danej przychodni
+      <img className="background" src={background} alt="background"></img>
+      <div className="transparency">
+        <div className="home_top">
+          <img className="logo" src={logo} alt="logo"></img>
         </div>
-      </div>
-      <div className="home_botton">
-        <div className="logging_pane">
-          <div className="loggin_title">Podaj dane logowania:</div>
-          <div className="logging_mid_left">
-            <div className="login">Login:</div>
-            <div className="password">Hasło:</div>
-          </div>
-          <div className="logging_mid_right">
-            <div className="login_input">
-              <input className="insert_login" type="text" />
-            </div>
-            <div className="password-input">
-              <input
-                className="insert_password"
-                type={showPassword ? "text" : "password"}
-                onChange={handleChange}
-              />
-              <img
-                className="show_hide_password"
-                src={show_hide_pass}
-                alt="show_hide_password"
-                onClick={togglePasswordVisibility}
-              />
-            </div>
+        <div className="home_mid">
+          <div className="title">Best Medical Service</div>
+          <div className="subtitle">Healthy life, make you happy.</div>
+        </div>
+        <div className="home_botton">
+          <line className="line"></line>
+          <div className="contact">
+            <div className="call_now">Call now</div>
+            <div className="phone">+48 555 444 333</div>
+            <href className="website">www.malinowski-clinics.com</href>
           </div>
           <div className="logging_button">
-            <button className="login_button">Zaloguj</button>
+            <Link to="log_in">
+              <button className="login_button">Log in</button>
+            </Link>
           </div>
+          <div className="home_botton_about">About us</div>
         </div>
-        <div className="logo_institution">
-          <img className="logo" src={logo} alt="logo" />
-        </div>
-        <div className="home_botton_about">Informacje o projekcie</div>
       </div>
     </div>
   );
 }
-
 export default Home;
