@@ -16,26 +16,32 @@ function Services() {
         <div className="services_line"></div>
       </div>
       <div className="services_acces">
-        <button className="patients">
-          <div className="services_patients_title">Patients</div>
-          <img
-            className="patient_icon"
-            src={patient_icon}
-            alt="patient_icon"
-          ></img>
-        </button>
-        <button className="hospitals">
-          <div className="services_hospitals_title">Hospitals</div>
-          <img
-            className="hospital_icon"
-            src={hospital_icon}
-            alt="hospital_icon"
-          ></img>
-        </button>
-        <button className="staff">
-          <div className="services_staff_title">Staff</div>
-          <img className="staff_icon" src={staff_icon} alt="staff_icon"></img>
-        </button>
+        <Link to="patients">
+          <button className="patients">
+            <div className="services_patients_title">Patients</div>
+            <img
+              className="patient_icon"
+              src={patient_icon}
+              alt="patient_icon"
+            ></img>
+          </button>
+        </Link>
+        <Link to="hospitals">
+          <button className="hospitals">
+            <div className="services_hospitals_title">Hospitals</div>
+            <img
+              className="hospital_icon"
+              src={hospital_icon}
+              alt="hospital_icon"
+            ></img>
+          </button>
+        </Link>
+        <Link to="staff">
+          <button className="staff">
+            <div className="services_staff_title">Staff</div>
+            <img className="staff_icon" src={staff_icon} alt="staff_icon"></img>
+          </button>
+        </Link>
       </div>
       <img
         className="medical_staff"
