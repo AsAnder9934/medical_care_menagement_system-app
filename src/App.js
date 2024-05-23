@@ -2,6 +2,7 @@ import "./App.css";
 import Home from "./components/home/Home";
 import Log_in from "./components/log_in/Log_in";
 import Register from "./components/register/Register";
+import Services from "./components/services/Services";
 import React, { useState } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
@@ -14,10 +15,10 @@ const router = createBrowserRouter([
     path: "/log_in",
     element: <Log_in />,
   },
-  // {
-  //   path: "/services",
-  //   element: <Services />,
-  // },
+  {
+    path: "/log_in/services",
+    element: <Services />,
+  },
   {
     path: "/log_in/register",
     element: <Register />,

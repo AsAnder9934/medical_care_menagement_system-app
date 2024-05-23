@@ -74,6 +74,12 @@
   color: #ffffff;
 }
 
+.log_in:hover {
+  background-color: #ffffff;
+  color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(0, 255, 213, 0.5);
+}
+
 .register {
   position: absolute;
   width: 250px;
@@ -91,6 +97,12 @@
 
   background: #1ca4ac;
   color: #ffffff;
+}
+
+.register:hover {
+  background-color: #ffffff;
+  color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(0, 255, 213, 0.5);
 }
 
 .return {
@@ -111,6 +123,12 @@
 
   background: #1ca4ac;
   color: #ffffff;
+}
+
+.return:hover {
+  background-color: #ffffff;
+  color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(0, 255, 213, 0.5);
 }
 
 .show_hide_password {

@@ -1,0 +1,210 @@
+.services {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.service_title {
+  position: absolute;
+  width: 1159px;
+  height: 102px;
+  left: 116px;
+  top: 95px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 102px;
+
+  color: #000000;
+}
+
+.logo_white {
+  position: absolute;
+  width: 435px;
+  height: 199px;
+  left: 1363px;
+  top: 25px;
+}
+
+.services_patients_title {
+  position: absolute;
+  width: 242.25px;
+  height: 77px;
+  left: 300px;
+  top: 61px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: left;
+
+  color: #000000;
+}
+
+.services_hospitals_title {
+  position: absolute;
+  width: 261px;
+  height: 77px;
+  left: 300px;
+  top: 61px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: left;
+
+  color: #000000;
+}
+
+.services_staff_title {
+  position: absolute;
+  width: 170.51px;
+  height: 77px;
+  left: 300px;
+  top: 61px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: left;
+
+  color: #000000;
+}
+
+.patient_icon {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 0px;
+  top: 0px;
+
+  background: #1ca4ac;
+}
+
+.hospital_icon {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 0px;
+  top: 0px;
+
+  background: #1ca4ac;
+}
+
+.staff_icon {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 0px;
+  top: 0px;
+
+  background: #1ca4ac;
+}
+
+.medical_staff {
+  position: absolute;
+  width: 747px;
+  height: 469px;
+  left: 989px;
+  top: 261px;
+}
+
+.exit {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  left: 1436px;
+  top: 767px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  border-radius: 23px;
+
+  color: #ffffff;
+  background: #1ca4ac;
+}
+
+.exit:hover {
+  background-color: #ffffff;
+  color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(0, 255, 213, 0.5);
+}
+
+.patients {
+  position: absolute;
+  width: 542.25px;
+  height: 200px;
+  left: 184px;
+  top: 251px;
+  background-color: white;
+  border: none;
+}
+
+.patients:hover {
+  .patient_icon {
+    background-color: #ffffff;
+  }
+  .services_patients_title {
+    color: #1ca4ac;
+  }
+}
+
+.hospitals {
+  position: absolute;
+  width: 561px;
+  height: 200px;
+  left: 184px;
+  top: 477px;
+  background-color: white;
+  border: none;
+}
+
+.hospitals:hover {
+  .hospital_icon {
+    background-color: #ffffff;
+  }
+  .services_hospitals_title {
+    color: #1ca4ac;
+  }
+}
+
+.staff {
+  position: absolute;
+  width: 470.51px;
+  height: 200px;
+  left: 184px;
+  top: 703px;
+  background-color: white;
+  border: none;
+}
+
+.staff:hover {
+  .staff_icon {
+    background-color: #ffffff;
+  }
+  .services_staff_title {
+    color: #1ca4ac;
+  }
+}
+
+.services_line {
+  position: absolute;
+  width: 1050px;
+  height: 0px;
+  left: 174px;
+  top: 225px;
+
+  border: 1px solid #000000;
+  transform: rotate(-0.11deg);
+}
