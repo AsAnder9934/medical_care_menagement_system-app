@@ -36,12 +36,13 @@ function Log_in({ showPassword, handleChange, togglePasswordVisibility }) {
               onClick={togglePasswordVisibility}
             />
           </div>
-
-          <href className="forgot_id">Forgot User ID/Password</href>
+          <Link to="/register">
+            <href className="forgot_id">Forgot User ID/Password</href>
+          </Link>
           <Link to="services">
             <button className="log_in">Log in</button>
           </Link>
-          <Link to="register">
+          <Link to="/register">
             <button className="register">Register</button>
           </Link>
         </div>
@@ -57,7 +58,7 @@ function Log_in({ showPassword, handleChange, togglePasswordVisibility }) {
               <button className="return">Return</button>
             </Link>
           </div>
-          <Link to="about">
+          <Link to="/about">
             <div className="home_botton_about">About us</div>
           </Link>
         </div>

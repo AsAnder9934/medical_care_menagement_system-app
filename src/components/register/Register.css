@@ -73,3 +73,9 @@
   background: #1ca4ac;
   color: #ffffff;
 }
+
+.register_button:hover {
+  background-color: #ffffff;
+  color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(0, 255, 213, 0.5);
+}

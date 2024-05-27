@@ -55,6 +55,10 @@
   color: #ffffff;
 }
 
+.forgot_id:hover {
+  color: blue;
+  text-decoration: underline;
+}
 .log_in {
   position: absolute;
   width: 250px;

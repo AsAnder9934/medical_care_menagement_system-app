@@ -47,7 +47,7 @@ function Register() {
               <button className="return">Return</button>
             </Link>
           </div>
-          <Link to="about">
+          <Link to="/about">
             <div className="home_botton_about">About us</div>
           </Link>
         </div>
