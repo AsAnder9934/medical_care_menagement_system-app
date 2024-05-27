@@ -1,0 +1,20 @@
+.about {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.about_title {
+  position: absolute;
+  width: 254px;
+  height: 77px;
+  left: 144px;
+  top: 166px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+
+  color: #000000;
+}

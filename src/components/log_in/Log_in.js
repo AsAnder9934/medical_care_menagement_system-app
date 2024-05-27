@@ -57,7 +57,9 @@ function Log_in({ showPassword, handleChange, togglePasswordVisibility }) {
               <button className="return">Return</button>
             </Link>
           </div>
-          <div className="home_botton_about">About us</div>
+          <Link to="about">
+            <div className="home_botton_about">About us</div>
+          </Link>
         </div>
       </div>
     </div>

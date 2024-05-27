@@ -73,6 +73,11 @@
   color: #ffffff;
 }
 
+.home_botton_about:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
 .website {
   position: absolute;
   width: 427px;

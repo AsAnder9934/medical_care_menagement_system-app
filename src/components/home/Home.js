@@ -28,7 +28,9 @@ function Home() {
               <button className="login_button">Log in</button>
             </Link>
           </div>
-          <div className="home_botton_about">About us</div>
+          <Link to="about">
+            <div className="home_botton_about">About us</div>
+          </Link>
         </div>
       </div>
     </div>
