@@ -5,6 +5,9 @@ import Register from "./components/register/Register";
 import Services from "./components/services/Services";
 import React, { useState } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Services_patients from "./components/services_patients/Services_patients";
+import Services_hospitals from "./components/services_hospitals/Services_hospitals";
+import Services_staff from "./components/services_staff/Services_staff";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +25,18 @@ const router = createBrowserRouter([
   {
     path: "/log_in/register",
     element: <Register />,
+  },
+  {
+    path: "/log_in/services/patients",
+    element: <Services_patients />,
+  },
+  {
+    path: "/log_in/services/hospitals",
+    element: <Services_hospitals />,
+  },
+  {
+    path: "/log_in/services/staff",
+    element: <Services_staff />,
   },
 ]);
 
