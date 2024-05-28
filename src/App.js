@@ -9,6 +9,12 @@ import Services_patients from "./components/services_patients/Services_patients"
 import Services_hospitals from "./components/services_hospitals/Services_hospitals";
 import Services_staff from "./components/services_staff/Services_staff";
 import About from "./components/about/About";
+import Map_patients from "./components/map_patients/Map_patients";
+import Map_hospital from "./components/map_hospitals/Map_hospital";
+import Map_staff from "./components/map_staff/Map_staff";
+import Patient_db from "./components/patient_db/Patient_db";
+import Hospital_db from "./components/hospital_db/Hospital_db";
+import Staff_db from "./components/staff_db/Staff_db";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +48,30 @@ const router = createBrowserRouter([
   {
     path: "/log_in/services/staff",
     element: <Services_staff />,
+  },
+  {
+    path: "/log_in/services/patients/map",
+    element: <Map_patients />,
+  },
+  {
+    path: "/log_in/services/hospital/map",
+    element: <Map_hospital />,
+  },
+  {
+    path: "/log_in/services/staff/map",
+    element: <Map_staff />,
+  },
+  {
+    path: "/log_in/services/patients/db",
+    element: <Patient_db />,
+  },
+  {
+    path: "/log_in/services/hospital/db",
+    element: <Hospital_db />,
+  },
+  {
+    path: "/log_in/services/staff/db",
+    element: <Staff_db />,
   },
 ]);
 

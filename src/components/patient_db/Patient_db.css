@@ -1,0 +1,46 @@
+.patient_db {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.database_title {
+  position: absolute;
+  width: 468px;
+  height: 77px;
+  left: 137px;
+  top: 125px;
+  text-align: left;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+
+  color: #000000;
+}
+
+.database_services {
+  position: absolute;
+  width: 150px;
+  height: 168.32px;
+  left: 1250px;
+  top: 66px;
+}
+
+.database_map {
+  position: absolute;
+  width: 150px;
+  height: 169.77px;
+  left: 1442px;
+  top: 66px;
+}
+
+.database_view {
+  position: absolute;
+  width: 150px;
+  height: 169.67px;
+  left: 1634px;
+  top: 64px;
+}

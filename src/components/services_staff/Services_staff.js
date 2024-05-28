@@ -15,7 +15,7 @@ function Services_staff() {
         <div className="services_line"></div>
       </div>
       <div className="services_acces">
-        <Link to="staff_db">
+        <Link to="/log_in/services/staff/db">
           <button className="patients">
             <div className="services_patients_title">Staff database</div>
             <img
@@ -37,7 +37,7 @@ function Services_staff() {
             ></img>
           </button>
         </Link>
-        <Link to="interactive_map_staff">
+        <Link to="/log_in/services/staff/map">
           <button className="staff">
             <div className="services_staff_title">
               Interactive map of employees

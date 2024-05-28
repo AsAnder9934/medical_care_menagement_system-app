@@ -16,7 +16,7 @@ function Services_patients() {
         <div className="services_line"></div>
       </div>
       <div className="services_acces">
-        <Link to="patients_db">
+        <Link to="/log_in/services/patients/db">
           <button className="patients">
             <div className="services_patients_title">Patients database</div>
             <img
@@ -36,7 +36,7 @@ function Services_patients() {
             ></img>
           </button>
         </Link>
-        <Link to="interactive_map_patients">
+        <Link to="/log_in/services/patients/map">
           <button className="staff">
             <div className="services_staff_title">Interactive patients map</div>
             <img className="staff_icon" src={map_icon} alt="staff_icon"></img>

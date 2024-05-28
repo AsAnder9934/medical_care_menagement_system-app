@@ -55,3 +55,53 @@
   color: rgba(0, 255, 255, 0.5);
   border-color: rgba(0, 255, 213, 0.5);
 }
+
+.text_left {
+  position: absolute;
+  width: 1110px;
+  height: 303px;
+  left: 168px;
+  top: 376px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: justify;
+
+  color: #000000;
+}
+
+.text_mid {
+  position: absolute;
+  width: 1579px;
+  height: 835px;
+  left: 168px;
+  top: 750px;
+  text-align: justify;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: #000000;
+}
+.text_bot {
+  position: absolute;
+  width: 1581px;
+  height: 493px;
+  left: 168px;
+  top: 2146px;
+  text-align: justify;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: #000000;
+}
