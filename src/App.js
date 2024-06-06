@@ -15,6 +15,9 @@ import Map_staff from "./components/map_staff/Map_staff";
 import Patient_db from "./components/patient_db/Patient_db";
 import Hospital_db from "./components/hospital_db/Hospital_db";
 import Staff_db from "./components/staff_db/Staff_db";
+import Patient_db_dashboard from "./components/patient_db_dashboard/Patient_db_dashboard";
+import Hospital_db_dashboard from "./components/hospital_db_dashboard/Hospital_db_dashboard";
+import Staff_db_dashboard from "./components/staff_db_dashboard/Staff_db_dashboard";
 
 const router = createBrowserRouter([
   {
@@ -72,6 +75,18 @@ const router = createBrowserRouter([
   {
     path: "/log_in/services/staff/db",
     element: <Staff_db />,
+  },
+  {
+    path: "/log_in/services/patients/db/dashboard",
+    element: <Patient_db_dashboard />,
+  },
+  {
+    path: "/log_in/services/hospital/db/dashboard",
+    element: <Hospital_db_dashboard />,
+  },
+  {
+    path: "/log_in/services/staff/db/dashboard",
+    element: <Staff_db_dashboard />,
   },
 ]);
 

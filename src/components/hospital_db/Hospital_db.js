@@ -26,7 +26,7 @@ function Hospital_db() {
               alt="database_map"
             ></img>
           </Link>
-          <Link to="">
+          <Link to="/log_in/services/hospital/db/dashboard">
             <img
               className="database_view"
               src={database_view}
