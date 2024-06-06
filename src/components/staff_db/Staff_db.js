@@ -26,7 +26,7 @@ function Staff_db() {
               alt="database_map"
             ></img>
           </Link>
-          <Link to="">
+          <Link to="/log_in/services/staff/db/dashboard">
             <img
               className="database_view"
               src={database_view}

@@ -1,13 +1,13 @@
 import React from "react";
-import "./Patient_db.css";
+import "./Patient_db_dashboard.css";
 import { Link } from "react-router-dom";
 import database_services from "./tmp/uslugi.png";
 import database_map from "./tmp/mapa.png";
 import database_view from "./tmp/widok.png";
 
-function Patient_db() {
+function Patient_db_dashboard() {
   return (
-    <div className="patient_db">
+    <div className="patient_db_dashboard">
       <div className="patient_db_top">
         <div className="service_title">Patients database</div>
         <div className="services_line"></div>
@@ -26,7 +26,7 @@ function Patient_db() {
               alt="database_map"
             ></img>
           </Link>
-          <Link to="/log_in/services/patients/db/dashboard">
+          <Link to="/log_in/services/patients/db">
             <img
               className="database_view"
               src={database_view}
@@ -38,4 +38,4 @@ function Patient_db() {
     </div>
   );
 }
-export default Patient_db;
+export default Patient_db_dashboard;
