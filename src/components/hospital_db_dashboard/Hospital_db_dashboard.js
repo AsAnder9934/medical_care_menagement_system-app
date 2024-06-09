@@ -4,8 +4,34 @@ import { Link } from "react-router-dom";
 import database_services from "./tmp/uslugi.png";
 import database_map from "./tmp/mapa.png";
 import database_view from "./tmp/widok.png";
+import MediaCard from "./Hospital_card";
 
 function Hospital_db_dashboard() {
+  const input_list = [
+    {
+      name: "SZPITAL",
+      surname: "Kliniczny w Leśnej Górze",
+      content: "Odziały: Położniczy, COVID",
+      image:
+        "https://marcinbiodrowski.com/wp-content/uploads/2018/03/dlaczego-warto-miec-dobre-zdjecie-w-CV.jpg",
+    },
+
+    {
+      name: "Maciej",
+      surname: "Malinowski",
+      content: "jakiś opis",
+      image:
+        "https://marcinbiodrowski.com/wp-content/uploads/2018/03/dlaczego-warto-miec-dobre-zdjecie-w-CV.jpg",
+    },
+    {
+      name: "Wojciech",
+      surname: "Oleksy",
+      content: "jakiś opis",
+      image:
+        "https://marcinbiodrowski.com/wp-content/uploads/2018/03/dlaczego-warto-miec-dobre-zdjecie-w-CV.jpg",
+    },
+  ];
+
   return (
     <div className="hospital_db">
       <div className="patient_db_top">
@@ -34,6 +60,19 @@ function Hospital_db_dashboard() {
             ></img>
           </Link>
         </div>
+      </div>
+      <div className="card_mid">
+        {input_list.map((item) => {
+          return (
+            <MediaCard
+              name={item.name}
+              surname={item.surname}
+              content={item.content}
+              image={item.image}
+            />
+          );
+        })}
+        <MediaCard />
       </div>
     </div>
   );
