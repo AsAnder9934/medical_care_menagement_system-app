@@ -5,10 +5,11 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import "./Patient_card.css";
 
 export default function Patient_card({ name, surname, content, image }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className="patient_cards" sx={{ maxWidth: 345 }}>
       <CardMedia sx={{ height: 140 }} image={image} title="green iguana" />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -19,7 +20,9 @@ export default function Patient_card({ name, surname, content, image }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">More information</Button>
+        <Button className="more_information" size="small">
+          More information
+        </Button>
       </CardActions>
     </Card>
   );

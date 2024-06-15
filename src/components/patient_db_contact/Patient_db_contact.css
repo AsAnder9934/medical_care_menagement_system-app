@@ -1,0 +1,338 @@
+.patient_db_contact {
+  background: rgba(28, 164, 172, 0.3);
+}
+
+.patient_db_contact_name {
+  position: absolute;
+  width: 1026px;
+  height: 86px;
+  left: 137px;
+  top: 26px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+
+  color: #000000;
+}
+.patient_db_contact_add {
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  left: 1338px;
+  top: 26px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  background: #1ca4ac;
+  color: #ffffff;
+}
+.patient_db_contact_add:hover {
+  background-color: #ffffff;
+  color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(0, 255, 213, 0.5);
+}
+
+.patient_data {
+  position: absolute;
+  width: 435px;
+  height: 80px;
+  left: 37px;
+  top: 152px;
+
+  background: #1ca4ac;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #ffffff;
+}
+.patient_data:hover {
+  background-color: #ffffff;
+  color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(0, 255, 213, 0.5);
+}
+.patient_addresses {
+  position: absolute;
+  width: 270px;
+  height: 80px;
+  left: 486px;
+  top: 152px;
+
+  background: #c5c5c5;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #000000;
+  background: #c5c5c5;
+}
+
+.patient_addresses:hover {
+  background-color: #ffffff;
+  color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(0, 255, 213, 0.5);
+}
+.patient_history {
+  position: absolute;
+  width: 442px;
+  height: 80px;
+  left: 770px;
+  top: 152px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #000000;
+  background: #c5c5c5;
+}
+.patient_history:hover {
+  background-color: #ffffff;
+  color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(0, 255, 213, 0.5);
+}
+.patient_doctor {
+  position: absolute;
+  width: 588px;
+  height: 80px;
+  left: 1226px;
+  top: 152px;
+
+  background: #c5c5c5;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #000000;
+}
+.patient_doctor:hover {
+  background-color: #ffffff;
+  color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(0, 255, 213, 0.5);
+}
+
+.patient_db_contact_picture img {
+  position: absolute;
+  width: 479px;
+  height: 481px;
+  left: 1163px;
+  top: 321px;
+}
+
+.patient_db_phone {
+  position: absolute;
+  width: 740px;
+  height: 58px;
+  left: 91px;
+  top: 397px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #000000;
+}
+.patient_db_phone2 {
+  background: #d9d9d9;
+}
+
+.patient_db_email {
+  position: absolute;
+  width: 728px;
+  height: 63px;
+  left: 91px;
+  top: 497px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #000000;
+}
+.patient_db_email2 {
+  background: #d9d9d9;
+}
+
+.patient_db_pesel {
+  position: absolute;
+  width: 740px;
+  height: 59px;
+  left: 91px;
+  top: 606px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #000000;
+}
+.patient_db_pesel2 {
+  background: #d9d9d9;
+}
+
+.patient_db_contact_edit {
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  left: 84px;
+  top: 752px;
+
+  background: #1ca4ac;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #ffffff;
+}
+.patient_db_contact_edit:hover {
+  background-color: #ffffff;
+  color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(0, 255, 213, 0.5);
+}
+
+.patient_db_contact_save {
+  background: #1ca4ac;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #ffffff;
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  left: 84px;
+  top: 752px;
+}
+.patient_db_contact_save:hover {
+  background-color: #ffffff;
+  color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(0, 255, 213, 0.5);
+}
+.patient_db_contact_return {
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  left: 578px;
+  top: 752px;
+
+  background: #1ca4ac;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #ffffff;
+}
+.patient_db_contact_return:hover {
+  background-color: #ffffff;
+  color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(0, 255, 213, 0.5);
+}
+.patient_dedit_name {
+  position: absolute;
+  width: 783px;
+  height: 86px;
+  left: 380px;
+  top: 26px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+
+  color: #000000;
+}
+.type {
+  position: absolute;
+  width: 103px;
+  height: 58px;
+  left: 104px;
+  top: 296px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #000000;
+}
+.patient_contact {
+  position: absolute;
+  width: 169px;
+  height: 58px;
+  left: 620px;
+  top: 296px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #000000;
+}
+.main_line {
+  position: absolute;
+  width: 800px;
+  height: 0px;
+  left: 80px;
+  top: 373px;
+
+  border: 3px solid #000000;
+}
+.submain_line1 {
+  position: absolute;
+  width: 800px;
+  height: 0px;
+  left: 80px;
+  top: 478px;
+
+  border: 1px solid #000000;
+}
+.submain_line2 {
+  position: absolute;
+  width: 800px;
+  height: 0px;
+  left: 80px;
+  top: 583px;
+
+  border: 1px solid #000000;
+}
+.submain_line3 {
+  position: absolute;
+  width: 800px;
+  height: 0px;
+  left: 80px;
+  top: 688px;
+
+  border: 1px solid #000000;
+}

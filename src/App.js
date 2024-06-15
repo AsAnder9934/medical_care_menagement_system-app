@@ -18,6 +18,7 @@ import Staff_db from "./components/staff_db/Staff_db";
 import Patient_db_dashboard from "./components/patient_db_dashboard/Patient_db_dashboard";
 import Hospital_db_dashboard from "./components/hospital_db_dashboard/Hospital_db_dashboard";
 import Staff_db_dashboard from "./components/staff_db_dashboard/Staff_db_dashboard";
+import Patient_db_contact from "./components/patient_db_contact/Patient_db_contact";
 
 const router = createBrowserRouter([
   {
@@ -87,6 +88,10 @@ const router = createBrowserRouter([
   {
     path: "/log_in/services/staff/db/dashboard",
     element: <Staff_db_dashboard />,
+  },
+  {
+    path: "/log_in/services/patients/db/contact/:pesel",
+    element: <Patient_db_contact />,
   },
 ]);
 

@@ -1,0 +1,5 @@
+.card_mid {
+  display: flex;
+  margin: 0 auto;
+  gap: 20px;
+}
