@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./Patient_db_contact.css";
+import "./Patient_db_history.css";
 import { Link, useParams } from "react-router-dom";
 
-function Patient_db_contact() {
+function Patient_db_history() {
   const { pesel } = useParams();
   const [patientData, setPatientData] = useState({
     name: "",
@@ -42,6 +42,13 @@ function Patient_db_contact() {
             pictureUrl: patient.zdjecie,
             lat: patient.szerokosc,
             long: patient.dlugosc,
+            street: patient.ulica,
+            zip: patient.kod,
+            city: patient.poczta,
+            history: patient.historia,
+            date: patient.data,
+            hospital: patient.szpital,
+            doctor: patient.lekarz,
           });
         } else {
           console.error("No patient data found in the response");
@@ -99,17 +106,17 @@ function Patient_db_contact() {
         </div>
         <button className="patient_db_contact_add">Add new</button>
         <div className="patient_db_contact_menu">
-          <button className="patient_data">Patient data</button>
+          <Link
+            to={`/log_in/services/patients/db/address/${patientData.pesel}`}
+          >
+            <button className="patient_data2">Patient data</button>
+          </Link>
           <Link
             to={`/log_in/services/patients/db/address/${patientData.pesel}`}
           >
             <button className="patient_addresses">Addresses</button>
           </Link>
-          <Link
-            to={`/log_in/services/patients/db/history/${patientData.pesel}`}
-          >
-            <button className="patient_history">Medical history</button>
-          </Link>
+          <button className="patient_history2">Medical history</button>
           <Link
             to={`/log_in/services/patients/db/hospital/${patientData.pesel}`}
           >
@@ -121,64 +128,43 @@ function Patient_db_contact() {
         <div className="patient_db_contact_left">
           <table>
             <tbody>
-              <div className="type">Type</div>
-              <div className="patient_contact">Contact</div>
+              <div className="type">Date: </div>
+              <div className="patient_contact2">Type of visit: </div>
               <line className="main_line" />
               <line className="submain_line1" />
               <line className="submain_line2" />
               <line className="submain_line3" />
               <tr className="patient_db_phone">
-                <td>Phone number: </td>
+                <td> </td>
                 <td className="patient_db_phone2">
                   {isEditing ? (
                     <input
                       type="text"
-                      name="phoneNumber"
-                      value={patientData.phoneNumber}
+                      name="date"
+                      value={patientData.date}
                       onChange={handleChange}
                     />
                   ) : (
-                    patientData.phoneNumber
+                    patientData.date
                   )}
                 </td>
               </tr>
-              <tr className="patient_db_email9">
-                <td>e-mail address:</td>
-                <td className="patient_db_email7">
+              <tr className="patient_db_email10">
+                <td className="patient_db_email11">
                   {isEditing ? (
                     <input
                       type="text"
-                      name="email"
-                      value={patientData.email}
+                      name="history"
+                      value={patientData.history}
                       onChange={handleChange}
                     />
                   ) : (
-                    patientData.email
-                  )}
-                </td>
-              </tr>
-              <tr className="patient_db_pesel">
-                <td>PESEL number:</td>
-                <td className="patient_db_pesel2">
-                  {isEditing ? (
-                    <input
-                      type="text"
-                      name="pesel"
-                      value={patientData.pesel}
-                      onChange={handleChange}
-                    />
-                  ) : (
-                    patientData.pesel
+                    patientData.history
                   )}
                 </td>
               </tr>
             </tbody>
           </table>
-        </div>
-        <div className="patient_db_contact_picture">
-          {patientData.pictureUrl && (
-            <img src={patientData.pictureUrl} alt="Patient" />
-          )}
         </div>
       </div>
       <div className="patient_db_contact_bot">
@@ -202,4 +188,4 @@ function Patient_db_contact() {
   );
 }
 
-export default Patient_db_contact;
+export default Patient_db_history;

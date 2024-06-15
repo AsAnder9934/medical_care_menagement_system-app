@@ -155,7 +155,7 @@
   background: #d9d9d9;
 }
 
-.patient_db_email {
+.patient_db_email9 {
   position: absolute;
   width: 728px;
   height: 63px;
@@ -170,7 +170,7 @@
 
   color: #000000;
 }
-.patient_db_email2 {
+.patient_db_email7 {
   background: #d9d9d9;
 }
 
@@ -287,10 +287,11 @@
 }
 .patient_contact {
   position: absolute;
-  width: 169px;
+  width: 280px;
   height: 58px;
   left: 620px;
   top: 296px;
+  text-align: left;
 
   font-family: "Lato";
   font-style: normal;

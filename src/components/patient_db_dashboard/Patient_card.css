@@ -1,11 +1,11 @@
 .patient_cards {
-  flex: 1 1 0; /* Elastyczność w szerokości i wysokości */
-  max-width: 300px; /* Maksymalna szerokość karty */
-  min-width: 200px; /* Minimalna szerokość, aby zapobiec całkowitemu zwężeniu */
+  flex: 1 1 0;
+  max-width: 300px;
+  min-width: 200px;
   min-height: 350px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  overflow: hidden; /* Ukrycie nadmiarowej zawartości */
+  overflow: hidden;
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;

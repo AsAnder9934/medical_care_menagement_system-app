@@ -1,0 +1,78 @@
+.patient_doctor2 {
+  position: absolute;
+  width: 588px;
+  height: 80px;
+  left: 1226px;
+  top: 152px;
+
+  background: #1ca4ac;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #ffffff;
+}
+.type2 {
+  position: absolute;
+  width: 400px;
+  height: 58px;
+  left: 104px;
+  top: 296px;
+  text-align: left;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #000000;
+}
+.patient_contact2 {
+  position: absolute;
+  width: 400px;
+  height: 58px;
+  left: 104px;
+  top: 505px;
+  text-align: left;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #000000;
+}
+.patient_db_email10 {
+  position: absolute;
+  height: 58px;
+  left: 91px;
+  top: 397px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #000000;
+  background: #d9d9d9;
+}
+.patient_db_email11 {
+  position: absolute;
+  width: 449px;
+  top: 210px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: left;
+
+  color: #000000;
+  background: #d9d9d9;
+}

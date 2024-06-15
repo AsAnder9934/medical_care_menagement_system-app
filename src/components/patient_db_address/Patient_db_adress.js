@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./Patient_db_contact.css";
+import "./Patient_db_address.css";
 import { Link, useParams } from "react-router-dom";
 
-function Patient_db_contact() {
+function Patient_db_address() {
   const { pesel } = useParams();
   const [patientData, setPatientData] = useState({
     name: "",
@@ -42,6 +42,13 @@ function Patient_db_contact() {
             pictureUrl: patient.zdjecie,
             lat: patient.szerokosc,
             long: patient.dlugosc,
+            street: patient.ulica,
+            zip: patient.kod,
+            city: patient.poczta,
+            history: patient.historia,
+            date: patient.data,
+            hospital: patient.szpital,
+            doctor: patient.lekarz,
           });
         } else {
           console.error("No patient data found in the response");
@@ -50,7 +57,7 @@ function Patient_db_contact() {
       .catch((error) => {
         console.error("There was an error fetching the patient data!", error);
       });
-  }, [pesel]);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -99,12 +106,12 @@ function Patient_db_contact() {
         </div>
         <button className="patient_db_contact_add">Add new</button>
         <div className="patient_db_contact_menu">
-          <button className="patient_data">Patient data</button>
           <Link
-            to={`/log_in/services/patients/db/address/${patientData.pesel}`}
+            to={`/log_in/services/patients/db/contact/${patientData.pesel}`}
           >
-            <button className="patient_addresses">Addresses</button>
+            <button className="patient_data2">Patient data</button>
           </Link>
+          <button className="patient_addresses2">Addresses</button>
           <Link
             to={`/log_in/services/patients/db/history/${patientData.pesel}`}
           >
@@ -121,54 +128,53 @@ function Patient_db_contact() {
         <div className="patient_db_contact_left">
           <table>
             <tbody>
-              <div className="type">Type</div>
-              <div className="patient_contact">Contact</div>
+              <div className="type">Address</div>
               <line className="main_line" />
               <line className="submain_line1" />
               <line className="submain_line2" />
               <line className="submain_line3" />
               <tr className="patient_db_phone">
-                <td>Phone number: </td>
+                <td>Street and number: </td>
                 <td className="patient_db_phone2">
                   {isEditing ? (
                     <input
                       type="text"
-                      name="phoneNumber"
-                      value={patientData.phoneNumber}
+                      name="street"
+                      value={patientData.street}
                       onChange={handleChange}
                     />
                   ) : (
-                    patientData.phoneNumber
+                    patientData.street
                   )}
                 </td>
               </tr>
-              <tr className="patient_db_email9">
-                <td>e-mail address:</td>
-                <td className="patient_db_email7">
+              <tr className="zip_code">
+                <td>Zip code:</td>
+                <td className="patient_db_email2">
                   {isEditing ? (
                     <input
                       type="text"
-                      name="email"
-                      value={patientData.email}
+                      name="zip"
+                      value={patientData.zip}
                       onChange={handleChange}
                     />
                   ) : (
-                    patientData.email
+                    patientData.zip
                   )}
                 </td>
               </tr>
               <tr className="patient_db_pesel">
-                <td>PESEL number:</td>
+                <td>Post:</td>
                 <td className="patient_db_pesel2">
                   {isEditing ? (
                     <input
                       type="text"
-                      name="pesel"
-                      value={patientData.pesel}
+                      name="city"
+                      value={patientData.city}
                       onChange={handleChange}
                     />
                   ) : (
-                    patientData.pesel
+                    patientData.city
                   )}
                 </td>
               </tr>
@@ -202,4 +208,4 @@ function Patient_db_contact() {
   );
 }
 
-export default Patient_db_contact;
+export default Patient_db_address;
