@@ -9,25 +9,12 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import axios from "axios";
+import MarkerPlacement from "./Marker_patients_placement";
 
 function Map_patients() {
-  const [hospitals, setHospitals] = useState(null);
-
-  const makePopup = (feature, layer) => {
-    if (feature.properties) {
-      console.log(feature.properties.imie_i_naz);
-      layer.bindPopup(`
-        <h1> Dane pacjenta</h1>
-        
-        <strong>Imię i nazwisko: </strong>${feature.properties.imie_i_naz}</br>
-        <strong>PESEL: </strong>${feature.properties.pesel}</br>
-        <img src=${feature.properties.zdjecie} alt="Lamp" width="70" height="70" margin="50" />
-        `);
-    }
-  };
+  const [patients, setPatients] = useState(null);
 
   useEffect(() => {
-    console.log("aaa");
     const getData = () => {
       axios
         .get(
@@ -35,38 +22,35 @@ function Map_patients() {
         )
         .then((dane) => {
           console.log(dane);
-          setHospitals(dane.data);
+          setPatients(dane.data.features);
         });
     };
     getData();
   }, []);
 
   return (
-    <div className="map_patients">
-      <MapContainer center={[52.2322222, 21.0]} zoom={6}>
+    <div className="map">
+      <MapContainer center={[52.2322222, 21.0]} zoom={7}>
         <LayersControl>
           <LayersControl.BaseLayer checked name="OSM">
             <TileLayer url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" />
           </LayersControl.BaseLayer>
-          <LayersControl.BaseLayer checked name="Google">
+          <LayersControl.BaseLayer name="Google">
             <TileLayer url="http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}" />
           </LayersControl.BaseLayer>
-          <LayersControl.BaseLayer checked name="Google Satelite">
+          <LayersControl.BaseLayer name="Google Satelite">
             <TileLayer url="http://mt0.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}" />
           </LayersControl.BaseLayer>
-          <LayersControl.BaseLayer checked name="Patients Map">
+          <LayersControl.BaseLayer name="Patient DB">
             <WMSTileLayer
-              layers="hospitalss"
-              url="http:///127.0.0.1:8080/geoserver/Hospital/wms"
+              layers="granice_wojewodztw"
+              url="http://127.0.0.1:8080/geoserver/Hospital/wms"
             />
           </LayersControl.BaseLayer>
-          <LayersControl.Overlay checked name="Patients Map DB WFS">
-            {hospitals ? (
-              <GeoJSON data={hospitals} onEachFeature={makePopup} />
-            ) : (
-              ""
-            )}
+          <LayersControl.Overlay checked name="Patients DB WFS">
+            {patients ? <GeoJSON dane={patients} /> : ""}
           </LayersControl.Overlay>
+          <MarkerPlacement />
         </LayersControl>
       </MapContainer>
     </div>
