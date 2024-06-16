@@ -1,36 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Staff_db_dashboard.css";
 import { Link } from "react-router-dom";
 import database_services from "./tmp/uslugi.png";
 import database_map from "./tmp/mapa.png";
 import database_view from "./tmp/widok.png";
 import MediaCard from "./Staff_card";
+import axios from "axios";
 
 function Staff_db_dashboard() {
-  const input_list = [
-    {
-      name: "SZPITAL",
-      surname: "Kliniczny w Leśnej Górze",
-      content: "Odziały: Położniczy, COVID",
-      image:
-        "https://marcinbiodrowski.com/wp-content/uploads/2018/03/dlaczego-warto-miec-dobre-zdjecie-w-CV.jpg",
-    },
+  const [hospitalsData, setHospitalsData] = useState([]);
 
-    {
-      name: "Maciej",
-      surname: "Malinowski",
-      content: "jakiś opis",
-      image:
-        "https://marcinbiodrowski.com/wp-content/uploads/2018/03/dlaczego-warto-miec-dobre-zdjecie-w-CV.jpg",
-    },
-    {
-      name: "Wojciech",
-      surname: "Oleksy",
-      content: "jakiś opis",
-      image:
-        "https://marcinbiodrowski.com/wp-content/uploads/2018/03/dlaczego-warto-miec-dobre-zdjecie-w-CV.jpg",
-    },
-  ];
+  useEffect(() => {
+    axios
+      .get(
+        "http://127.0.0.1:8080/geoserver/Hospital/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Hospital%3Ahospitals_staff&maxFeatures=50&outputFormat=application%2Fjson"
+      )
+      .then((response) => {
+        console.log("API response:", response);
+        const data = response.data;
+        if (data.features && data.features.length > 0) {
+          const hospitals = data.features.map((feature) => feature.properties);
+          setHospitalsData(hospitals);
+        } else {
+          console.error("No hospital data found in the response");
+        }
+      })
+      .catch((error) => {
+        console.error("There was an error fetching the hospital data!", error);
+      });
+  }, []);
+
   return (
     <div className="staff_db_dashboard">
       <div className="patient_db_top">
@@ -61,17 +60,21 @@ function Staff_db_dashboard() {
         </div>
       </div>
       <div className="card_mid">
-        {input_list.map((item) => {
+        {hospitalsData.map((hospital, index) => {
           return (
-            <MediaCard
-              name={item.name}
-              surname={item.surname}
-              content={item.content}
-              image={item.image}
-            />
+            <Link
+              to={`/log_in/services/staff/db/contact/${hospital.pesel}`}
+              key={index}
+            >
+              <MediaCard
+                className="staff_cards"
+                name={hospital.imie}
+                content={hospital.nazwisko}
+                image={hospital.zdjecie}
+              />
+            </Link>
           );
         })}
-        <MediaCard />
       </div>
     </div>
   );

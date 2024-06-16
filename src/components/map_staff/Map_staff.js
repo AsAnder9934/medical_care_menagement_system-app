@@ -1,25 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Map_staff.css";
 import {
   LayersControl,
   MapContainer,
   TileLayer,
   WMSTileLayer,
+  GeoJSON,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import axios from "axios";
+import MarkerPlacement from "./Marker_staff_placement";
 
 function Map_staff() {
+  const [satff, setStaff] = useState(null);
+
   useEffect(() => {
-    console.log("aaa");
     const getData = () => {
       axios
         .get(
-          // "http://127.0.0.1:8080/geoserver/prge/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=prge%3AA01_Granice_wojewodztw_db&maxFeatures=50&outputFormat=application%2Fjson"
-          "https://jsonplaceholder.typicode.com/posts/1"
+          "http://127.0.0.1:8080/geoserver/Hospital/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Hospital%3Ahospitals_staff&maxFeatures=50&outputFormat=application%2Fjson"
         )
         .then((dane) => {
           console.log(dane);
+          setStaff(dane.data.features);
         });
     };
     getData();
@@ -38,15 +41,16 @@ function Map_staff() {
           <LayersControl.BaseLayer checked name="Google Satelite">
             <TileLayer url="http://mt0.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}" />
           </LayersControl.BaseLayer>
-          <LayersControl.BaseLayer checked name="granice wojewodztw db">
+          <LayersControl.BaseLayer checked name="Staff DB">
             <WMSTileLayer
-              layers="A01_Granice_wojewodztw_db"
-              url="http://127.0.0.1:8080/geoserver/prge/wms"
+              layers="Staff DB WMS"
+              url="http://127.0.0.1:8080/geoserver/Hospital/ows"
             />
           </LayersControl.BaseLayer>
-          {/* <LayersControl.Overlay checked name="granice wojewodztwa db WFS">
-            <GeoJSON data={A01_Granice_wojewodztw_db} />
-          </LayersControl.Overlay> */}
+          <LayersControl.Overlay checked name="Hospitals DB WFS">
+            {satff ? <GeoJSON dane={satff} /> : ""}
+          </LayersControl.Overlay>
+          <MarkerPlacement />
         </LayersControl>
       </MapContainer>
     </div>
