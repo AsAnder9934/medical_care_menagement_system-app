@@ -70,11 +70,11 @@ function Hospital_db() {
             {hospitalsData.map((hospital, index) => (
               <tr key={index}>
                 <td>
-                  <Link
+                  {/* <Link
                     to={`/log_in/services/hospitals/db/contact/${hospital.nazwa}`}
-                  >
-                    {hospital.nazwa}
-                  </Link>
+                  > */}
+                  {hospital.nazwa}
+                  {/* </Link> */}
                 </td>
                 <td>{hospital.ulica}</td>
               </tr>

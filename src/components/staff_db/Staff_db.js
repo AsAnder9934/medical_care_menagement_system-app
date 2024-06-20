@@ -70,7 +70,7 @@ function Staff_db() {
               <tr key={index}>
                 <td>
                   <Link
-                    to={`/log_in/services/staff/db/contact/${hospital.nazwa}`}
+                    to={`/log_in/services/staff/db/contact/${hospital.pesel}`}
                   >
                     {hospital.imie} {hospital.nazwisko}
                   </Link>
