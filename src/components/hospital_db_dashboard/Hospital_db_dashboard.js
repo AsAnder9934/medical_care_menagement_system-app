@@ -61,17 +61,17 @@ function Hospital_db_dashboard() {
       <div className="card_mid">
         {hospitalsData.map((hospital, index) => {
           return (
-            <Link
-              to={`/log_in/services/hospitals/db/contact/${hospital.nazwa}`}
-              key={index}
-            >
-              <MediaCard
-                className="hospital_cards"
-                name={hospital.nazwa}
-                content={hospital.ulica}
-                image={hospital.zdjecie}
-              />
-            </Link>
+            // <Link
+            //   to={`/log_in/services/hospitals/db/contact/${hospital.nazwa}`}
+            //   key={index}
+            // >
+            <MediaCard
+              className="hospital_cards"
+              name={hospital.nazwa}
+              content={hospital.ulica}
+              image={hospital.zdjecie}
+            />
+            // </Link>
           );
         })}
       </div>
