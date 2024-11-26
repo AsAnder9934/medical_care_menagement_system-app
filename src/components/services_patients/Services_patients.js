@@ -26,16 +26,16 @@ function Services_patients() {
             ></img>
           </button>
         </Link>
-        <Link to="add_patient">
-          <button className="hospitals">
-            <div className="services_hospitals_title">Adding a new patient</div>
-            <img
-              className="hospital_icon"
-              src={add_icon}
-              alt="hospital_icon"
-            ></img>
-          </button>
-        </Link>
+        {/* <Link to="add_patient"> */}
+        <button className="hospitals">
+          <div className="services_hospitals_title">Adding a new patient</div>
+          <img
+            className="hospital_icon"
+            src={add_icon}
+            alt="hospital_icon"
+          ></img>
+        </button>
+        {/* </Link> */}
         <Link to="/log_in/services/patients/map">
           <button className="staff">
             <div className="services_staff_title">Interactive patients map</div>

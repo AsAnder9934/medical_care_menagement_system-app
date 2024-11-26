@@ -1,0 +1,16 @@
+.patient_cards {
+  flex: 1 1 0;
+  max-width: 300px;
+  min-width: 200px;
+  min-height: 350px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.patient_cards:hover {
+  transform: scale(1.05);
+}

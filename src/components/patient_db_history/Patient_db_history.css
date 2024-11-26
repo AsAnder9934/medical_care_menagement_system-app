@@ -1,0 +1,15 @@
+.patient_history2 {
+  position: absolute;
+  width: 442px;
+  height: 80px;
+  left: 770px;
+  top: 152px;
+
+  background: #1ca4ac;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
+}

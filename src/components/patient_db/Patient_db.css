@@ -44,3 +44,32 @@
   left: 1634px;
   top: 64px;
 }
+
+.table_mid {
+  width: 80%;
+}
+
+.patients_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 300px 150px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #000000;
+}
+
+.patients_table th,
+.patients_table td {
+  border: 1px solid #1ca4ac;
+  padding: 10px;
+  text-align: left;
+}
+
+.patients_table th {
+  background: #1ca4ac;
+}

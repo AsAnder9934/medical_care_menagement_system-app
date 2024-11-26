@@ -13,7 +13,7 @@ function Home() {
           <img className="logo" src={logo} alt="logo"></img>
         </div>
         <div className="home_mid">
-          <div className="title">Best Medical Service</div>
+          <div className="title">Best Medical Services</div>
           <div className="subtitle">Healthy life, make you happy.</div>
         </div>
         <div className="home_botton">

@@ -18,6 +18,12 @@ import Staff_db from "./components/staff_db/Staff_db";
 import Patient_db_dashboard from "./components/patient_db_dashboard/Patient_db_dashboard";
 import Hospital_db_dashboard from "./components/hospital_db_dashboard/Hospital_db_dashboard";
 import Staff_db_dashboard from "./components/staff_db_dashboard/Staff_db_dashboard";
+import Patient_db_contact from "./components/patient_db_contact/Patient_db_contact";
+import Patient_db_address from "./components/patient_db_address/Patient_db_adress";
+import Patient_db_history from "./components/patient_db_history/Patient_db_history";
+import Patient_db_hospital from "./components/patients_db_hospital/Patients_db_hospital";
+import Staff_db_contact from "./components/staff_db_contact/Staff_db_contact";
+import Staff_db_address from "./components/staff_db_address/Staff_db_address";
 
 const router = createBrowserRouter([
   {
@@ -87,6 +93,30 @@ const router = createBrowserRouter([
   {
     path: "/log_in/services/staff/db/dashboard",
     element: <Staff_db_dashboard />,
+  },
+  {
+    path: "/log_in/services/patients/db/contact/:pesel",
+    element: <Patient_db_contact />,
+  },
+  {
+    path: "/log_in/services/patients/db/address/:pesel",
+    element: <Patient_db_address />,
+  },
+  {
+    path: "/log_in/services/patients/db/history/:pesel",
+    element: <Patient_db_history />,
+  },
+  {
+    path: "/log_in/services/patients/db/hospital/:pesel",
+    element: <Patient_db_hospital />,
+  },
+  {
+    path: "/log_in/services/staff/db/contact/:pesel",
+    element: <Staff_db_contact />,
+  },
+  {
+    path: "/log_in/services/staff/db/address/:pesel",
+    element: <Staff_db_address />,
   },
 ]);
 
